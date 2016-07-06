@@ -1,0 +1,40 @@
+package breakthroughPP.game.Player;
+
+import breakthroughPP.game.*;
+import breakthroughPP.exceptions.*;
+import breakthroughPP.preset.*;
+import java.rmi.RemoteException;
+
+/**
+* PC Player Class
+* this class implements the behavior the player will be able to have.
+* @author Jakob Wedemeyer
+* @version 1.0
+* @since 2016-07-04
+*/
+public class HumanPlayer implements Player {
+	Status status = new Status(Setting.OK);
+	Move   next   = new Move();
+
+  /**
+  */
+	public Move request() throws Exception, RemoteException {}
+
+  /**
+  */
+	public void confirm(Status boardStatus) throws Exception, RemoteException
+	{
+	}
+
+  /**
+  */
+	public void update(Move opponentMove, Status boardStatus) throws Exception, RemoteException
+	{
+	}
+
+  /**
+  */
+  public void init(Int dimX, int dimY, int color) throws Exception, RemoteException {
+
+  }
+}
